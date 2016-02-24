@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rotating Tank- By Angel</title>
+    <style type = "text/css">
+    h1{font: bold italic 30px/30px Georgia; margin-left: 4px; color: #9400D3;}
+    p{ font: italic 14px/14px Georgia; margin-left: 4px;color: #9400D3;}
+    Help1{text-align: center;}
+    </style>
+  </head>
+
+  <body onload="main()" onresize="resize()" style="margin:0px;padding:0px;width:100%;height:100%;">
+    <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas" 
+    </canvas>
+  <h1>User Guide</h1>
+  <p>(Mac: F1 + fn; Windows: F1)<br>Press the button to run/stop the moving on screen.  <button type="button" onclick="runStop()">Run/Stop</button>
+    
+    <div id= Help1></div>
+    <div id= Help2></div>
+    <div id= Help3></div>
+    <br><div id=MouseText> 
+    Mouse Drag totals (CVV x,y coords): 0,0
+    </div>
+    
+
+    <div id=QuatValue>  X=0i, Y=0j, Z=0k, W=1. <br> length=1. </div>
+    <script src="webgl-utils.js"></script>
+    <script src="webgl-debug.js"></script>
+    <script src="cuon-utils.js"></script>
+    <script src="cuon-matrix-mod.js"></script>
+    <script src="cuon-matrix-quat.js"></script>
+    <script src="ProjB.js"></script>
+  </body>
+</html>
