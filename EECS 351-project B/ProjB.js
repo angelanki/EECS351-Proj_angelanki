@@ -665,8 +665,8 @@
       gl.viewport(0, 0, canvas.width/2, canvas.height);
       projMatrix.setPerspective(40, (0.5*canvas.width)/canvas.height, 1, 100);
       //projMatrix.setFrustum(-canvas.width/700, canvas.width/300,          // left,right;
-                          -canvas.height/00, canvas.height/300,          // bottom, top;
-                          1, 100)
+      //                    -canvas.height/00, canvas.height/300,          // bottom, top;
+      //                    1, 100);
     
     viewMatrix.setLookAt(g_EyeX+currentAngle*tempEyeX*0.02, g_EyeY-currentAngle*tempEyeY*0.005, g_EyeZ-currentAngle*tempEyeZ*0.1, // eye position
                           g_LookAtX-currentAngle*tempX*0.06, g_LookAtY-currentAngle*tempY*0.02, g_LookAtZ+currentAngle*tempZ*0.3,                  // look-at point 
