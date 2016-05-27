@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8" />
+    <title>Project C- By Angel</title>
+    <style type = "text/css">
+    body{font: 13px/140% Arial, sans-serif; background: black; color: white; overflow: hidden;}
+    h1{font: bold italic 30px/30px Georgia; margin-left: 4px; color: #F3F3F3;}
+    p{ font: bold italic 14px/14px Georgia; margin-left: 4px; color: #F3F3F3; line-height: 20px}
+    ul{ font:  14px/14px Georgia; color: #F3F3F3; line-height: 20px;}
+    input{width: 20px}
+    canvas{position: fixed; top: 0; left: 280px;}
+    #help{position: absolute; top:0; bottom: 0; width: 250px; padding-right: 20px; overflow: auto; }
+    Help1{text-align: center;}
+    #button{background: #7EE3E5; border-radius: 4px; border: 2px; }
+    #button:active{background-color: #1E9BF4}
+    #gui {position: fixed; top: 0px; right: 0px;}
+
+    </style>
+</head>
+
+<body onload="main()"  onresize="resize()" >
+    <canvas id="webgl" width="600" height="400">
+        Please use a browser that supports "canvas" 
+    </canvas>
+    <div id = "help">
+        <h1>User Guide</h1>
+        <p >(Mac: F1 + fn; Windows: F1)</p>
+        <p>Button Controller</p>
+        <ul><li>Press the button to run/stop the moving on screen. <br><button type="button" onclick="runStop()" id = 'button'>Run/Stop</button></ul>
+        <p>Keyboard Controller</p>
+        <p><ul><li>&larr;/ &rarr;/ &uarr;/ &darr; -> move eyeposition to left/ right and zoom in/ out.
+            <li>A/ D/ W/ S -> look left/ right/ up/ down.
+                <li>a/ d/ w/ s/ q/ e -> move light's position.
+                    <li>Z -> switch on/off the "headlight".
+                        <li>X/ x/ z/ c -> switch on/off cubeLight/ torusLight/ sphereLight/ cylinderLight.
+                            <li>'esc' -> reset the screen.
+                                <li>'space' -> run/ stop the moving.</p></ul>
+                                    <p>Interactive switching between two lighting/ shading methods.
+                                        <ul><li>Press button to change Phong lighting/ Blinn phong lighting light<br><button type="button" onClick='switchPhongBlinnPhong()' id = 'button'>Switch</button>  
+                                        </ul></p>
+                                        <p>Mouse Controller
+                                        <ul><li>Drag your mouse to move texture balls.</p>
+
+
+
+                                        <div id= Help1></div>   
+                                        <!--<p><div id=MouseText> 
+                                        Mouse Drag totals (CVV x,y coords): 0,0
+                                    </div></p>
+                                    <div id=QuatValue>  X=0i, Y=0j, Z=0k, W=1. <br> length=1. </div>-->
+                                    <div id = "gui"></div>
+                                </div>
+
+
+                                <div id= Help2></div>
+                                <div id= Help3></div>
+
+
+                                <script src="webgl-utils.js"></script>
+                                <script src="webgl-debug.js"></script>
+                                <script src="cuon-utils.js"></script>
+                                <script src="cuon-matrix.js"></script>
+                                <script src="cuon-matrix-mod.js"></script>
+                                <script src="cuon-matrix-quat.js"></script>
+                                <script src="materials_Ayerdi.js"></script>
+                                <script src="dat.gui.min.js"></script>
+                                <script src="dat.gui.js"></script>
+                                <script src="setLight.js"></script>
+                                <script src="obj.js"></script>
+                                <script src="ProjC.js"></script>
+
+                            </body>
+                            </html>
